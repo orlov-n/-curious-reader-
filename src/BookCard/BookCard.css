@@ -3,7 +3,7 @@
   height: 300px;
 	background: #e0e1dc;
 	transform-style: preserve-3d;
-	box-shadow: inset 300px 0 50px rgba(0,0,0,.5), 20px 0 60px rgba(0,0,0,.5);
+	box-shadow: inset 300px 0 50px rgba(0,0,0,.5), 10px 15px 15px rgba(0,0,0,.5);
 	transition: 1s;
 }
 
@@ -118,10 +118,17 @@
   height: 60px;
   clip-path: polygon(0% 0%, 100% 0%, 90% 50%, 100% 100%, 0% 100%);
 	margin-bottom: 2vh;
+	/* z-index: -4; */
 }
 
 .flag-text {
   padding-left: 12px;
   font-size: 16px;
   padding-right: 30px;
+	/* z-index: -4; */
+
+}
+
+.book-card-container:hover {
+	z-index: 1;
 }
