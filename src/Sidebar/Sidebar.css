@@ -2,6 +2,39 @@
   height: 100vh;
 }
 
+nav {
+  background-color: #422040;
+  color: white;
+  height: 100%;
+  width: 18%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  padding: 18px;
+}
+
+
+h1 {
+  color: white;
+  text-decoration: none;
+  font-size: 35px;
+  margin: 20px 0px;
+}
+
+.book-icon {
+  height: 40px;
+  width: auto;
+  filter: brightness(0) invert(1);
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+
 .genre-links {
   color: white;
   background-color: #7A5177;
