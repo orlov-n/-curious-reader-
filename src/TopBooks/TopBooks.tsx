@@ -18,7 +18,7 @@ const TopBooks = ({ bookLists }: IBookLists) => {
   return (
     !bookLists.length ? 
       <img src={loadingIcon} className="loading-icon" />
-    : <section className="books-container">{numberOneBooks}</section>
+    : <section className="top-books-container">{numberOneBooks}</section>
 
     
    
