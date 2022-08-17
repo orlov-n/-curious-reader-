@@ -8,6 +8,8 @@ import BookGenrePage from "../BookGenrePage/BookGenrePage";
 import { NavLink, Route } from "react-router-dom";
 import ErrorMessage from "../ErrorMessage/ErrorMessage";
 import BookIcon from "../assets/book.png";
+import loadingIcon from "../assets/orange-loading.gif";
+
 
 const App = () => {
   const [bookLists, setBookLists] = useState([]);
@@ -31,6 +33,11 @@ const App = () => {
           <ErrorMessage />
         </div>
       ) : (
+        !bookLists.length ? 
+       
+
+          ( <div><img src={loadingIcon} className="loading-icon" /> <h1>Page Loading</h1></div>):
+        
         <>
           <Sidebar bookLists={bookLists} />
 

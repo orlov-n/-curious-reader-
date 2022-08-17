@@ -8,3 +8,10 @@
   position: absolute;
   right: 0;
 }
+
+
+.loading-icon {
+  height: 90vh;
+  width: 100vw;
+  /* filter: brightness(5) invert(5); */
+}
