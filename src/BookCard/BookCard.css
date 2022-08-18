@@ -1,6 +1,6 @@
 .book-card {
-	width: 240px;
-  height: 300px;
+	width: 15rem;
+  height: 19rem;
 	background: #e0e1dc;
 	transform-style: preserve-3d;
 	box-shadow: inset 300px 0 50px rgba(0,0,0,.5), 10px 15px 15px rgba(0,0,0,.5);
@@ -131,6 +131,13 @@
   padding-right: 30px;
 	/* z-index: -1; */
 
+}
+
+.book-card-container{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
 }
 
 .book-card-container:hover {

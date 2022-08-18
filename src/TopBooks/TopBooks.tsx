@@ -1,5 +1,5 @@
 import React from "react";
-import { IBookLists } from "../Interfaces";
+import { IBookLists, IList } from "../Interfaces";
 import BookCard from "../BookCard/BookCard";
 import "../TopBooks/TopBooks.css";
 import loadingIcon from "../assets/orange-loading.gif";

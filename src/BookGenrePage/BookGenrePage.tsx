@@ -3,9 +3,9 @@ import BookCard from "../BookCard/BookCard";
 import "../BookGenrePage/BookGenrePage.css";
 import ErrorMessage from "../ErrorMessage/ErrorMessage";
 import loadingIcon from "../assets/orange-loading.gif";
-import { IList, IBookLists } from "../Interfaces";
+import { IList, BookLists } from "../Interfaces";
 
-let defaultList = {
+let defaultList: IList = {
   list_name: "",
   list_name_encoded: "",
   bestsellers_date: "",
@@ -17,11 +17,20 @@ let defaultList = {
   normal_list_ends_at: 0,
   updated: "",
   books: [],
+  list_id: null,
 };
 
-const BookGenrePage = ({ listName, bookLists, error }) => {
+const BookGenrePage = ({
+  listName,
+  bookLists,
+  error,
+}: {
+  listName: string;
+  bookLists: BookLists;
+  error: boolean;
+}) => {
   const [list, setList] = useState(defaultList);
-  const [genreError] = useState(error);
+  const [genreError, setGenreError] = useState(error);
 
   const getListData = () => {
     const selectedGenre: IList = bookLists.find(

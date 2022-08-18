@@ -1,23 +1,17 @@
-export interface IGenres {
-  genres: IBookLists;
-}
-export interface Props {
-  genres: IBookLists;
-  error: IError;
-}
 
-export interface IState {
-  bookLists: IList[];
-  error: boolean;
-}
+export type BookLists = Array<IList>
+
+// interface
+
+// export type bookLists: BookLists = Array<IList>
 
 export interface IBookLists {
   bookLists: IList[];
 }
 
-export interface IError {
-  error: boolean;
-}
+// export interface IError {
+//   error: boolean;
+// }
 
 export interface IList {
   list_name_encoded: string;

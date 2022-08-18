@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import "./App.css";
 import { fetchBookData } from "../api-calls";
 import Sidebar from "../Sidebar/Sidebar";
-import { IList, IBookLists, IError } from "../Interfaces";
+import { BookLists } from "../Interfaces";
 import TopBooks from "../TopBooks/TopBooks";
 import BookGenrePage from "../BookGenrePage/BookGenrePage";
 import { Route } from "react-router-dom";
@@ -10,16 +10,16 @@ import ErrorMessage from "../ErrorMessage/ErrorMessage";
 import loadingIcon from "../assets/orange-loading.gif";
 
 const App = () => {
-  const [bookLists, setBookLists] = useState([]);
-  const [error, setError] = useState(false);
+  const [bookLists, setBookLists] = useState<BookLists>([]);
+  const [error, setError] = useState<boolean>(false);
 
   useEffect(() => {
     fetchBookData()
       .then((data) => {
         setBookLists(data.results.lists);
       })
-      .catch((error) => {
-        console.log(error);
+      .catch((err: Error) => {
+        console.log(err);
         setError(true);
       });
   }, [error]);
