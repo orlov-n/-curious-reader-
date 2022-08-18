@@ -21,7 +21,7 @@ nav {
   left: 0;
   padding: 1rem;
   padding-top: 0;
-  min-width: 6rem;
+  min-width: 7rem;
   /* display: inline-block; */
   /* margin-bottom: 1rem; */
 }
@@ -30,7 +30,7 @@ nav {
 h1 {
   color: white;
   text-decoration: none;
-  font-size: min(4vw, 2.2rem);
+  font-size: min(4vw, 1.8rem);
 
   margin: 0;
   margin-right: .94rem;
@@ -79,7 +79,7 @@ h1 {
 
 
 .ribbon {
-  font-size: min(2.15vw, 1.322rem);
+  font-size: min(2.15vw, 1rem);
 
  /* width: 50%; */
   /* font-size: min(2.5vw, 1.2rem); */
@@ -142,10 +142,13 @@ h1 {
 
 .ribbon-content {
   /* margin: .642rem; */
-  margin: .421rem;
+  margin: .85421rem;
+  padding: 0;
 }
 
+
 .ribbon {
-  min-width: 7rem;
+  min-width: 8rem;
+  /* max-height: 3.8rem; */
 
 }
