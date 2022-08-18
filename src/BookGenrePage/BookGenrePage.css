@@ -1,6 +1,6 @@
 .books-container {
   display: grid;
-  grid-gap: 3rem;
+  grid-gap: 5rem;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   width: 70%;
   padding: 2% 5% 8% 5%;
