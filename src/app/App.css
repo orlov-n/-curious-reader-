@@ -7,3 +7,7 @@
   width: 100vw;
 }
 
+body {
+  /* overflow-x: hidden; */
+}
+
