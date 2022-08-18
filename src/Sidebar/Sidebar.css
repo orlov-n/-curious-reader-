@@ -69,29 +69,22 @@ h1 {
 
 }
 
-.active {
-  /* background-color: rgb(201, 125, 125); */
-
-  /* color: black; */
-  /* text-shadow: 3rem; */
-}
-
 
 
 .ribbon {
   font-size: min(2.15vw, 1rem);
 
- /* width: 50%; */
+  /* width: 70%; */
   /* font-size: min(2.5vw, 1.2rem); */
-    
- position: relative;
- background: #ba89b6;
- color: #fff;
- text-align: center;
- /* padding: 0.1rem; */
+  
+  position: relative;
+  background: #ba89b6;
+  color: #fff;
+  text-align: center;
+  /* padding: 0.1rem; */
 }
 .ribbon:before, .ribbon:after {
- content: "";
+  content: "";
  position: absolute;
  display: block;
  bottom: -1rem;
@@ -99,45 +92,31 @@ h1 {
  z-index: -1;
 }
 .ribbon:before {
-    /* margin: 0;
-  padding: 0;
-  font-size: min(2.5vw, 1.2rem); */
- left: -2rem;
- border-right-width: 2.3rem;
- border-left-color: transparent;
+  left: -2rem;
+  border-right-width: 2.3rem;
+  border-left-color: transparent;
 }
 .ribbon:after {
-  /* margin: 0;
-  padding: 0;
-  font-size: min(2.5vw, 1.2rem); */
- right: -2rem;
- border-left-width: 2.193rem;
- border-right-color: transparent;
+  right: -2rem;
+  border-left-width: 2.193rem;
+  border-right-color: transparent;
 }
 .ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
-  /* margin: 0;
-  padding: 0; */
-  /* font-size: min(1.5vw, 1.2rem); */
- content: "";
- position: absolute;
- display: block;
- border-style: solid;
- border-color: #6c546a transparent transparent transparent;
- bottom: -1rem;
+  content: "";
+  position: absolute;
+  display: block;
+  border-style: solid;
+  border-color: #6c546a transparent transparent transparent;
+  bottom: -1rem;
 }
 .ribbon .ribbon-content:before {
-  /* margin: 0;
-  padding: 0;
-  font-size: min(2.5vw, 1.2rem); */
- left: 0;
- border-width: 1rem 0 0 1rem;
+  left: 0;
+  border-width: 1rem 0 0 1rem;
 }
 .ribbon .ribbon-content:after {
-  /* margin: 0;
-  padding: 0;
-  font-size: min(2.5vw, 1.2rem); */
- right: 0;
- border-width: 1rem 1rem 0 0;
+
+  right: 0;
+  border-width: 1rem 1rem 0 0;
 }
 
 .ribbon-content {
@@ -149,6 +128,13 @@ h1 {
 
 .ribbon {
   min-width: 8rem;
+  max-width: 14rem;
   /* max-height: 3.8rem; */
-
 }
+  
+  .active {
+    background-color: rgb(201, 125, 125);
+  
+    /* text-shadow: 3rem; */
+    color: black;
+  }
