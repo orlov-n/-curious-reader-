@@ -153,7 +153,7 @@
 	justify-content: center;
   align-items: center;
 	flex-wrap: wrap;
-	flex-direction: column;
+	flex-direction: column;  
 }
 
 .book-card-container{
@@ -167,4 +167,3 @@ flex-direction: column;
 	/* z-index: 1; */
 	padding: 0;
 }
-

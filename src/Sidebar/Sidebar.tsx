@@ -14,7 +14,9 @@ const Sidebar = ({ bookLists }: IBookLists) => {
           to={`/${list.list_name}`}
           style={{ textDecoration: "none" }}
         >
-          <p className="genre-links">{list.display_name}</p>
+          <div className="ribbon">
+          <p className="ribbon-content">{list.display_name}</p>
+          </div>
         </NavLink>
       
     );
@@ -32,7 +34,7 @@ const Sidebar = ({ bookLists }: IBookLists) => {
    <section className="genres-container">
     
     {bookGenres}
-    </section>;
+    </section>
     </nav>
   )
 };
