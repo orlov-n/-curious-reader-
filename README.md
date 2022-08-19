@@ -15,7 +15,7 @@
 
 ## Abstract
 
-- Curious Reader is built with TypeScript in the React.js framework.  Our application is built for users that are wanting to find some awesome new books to read per _New York Times Best Sellers_ lists. 
+- NY Times Primes is built with TypeScript in the React.js framework.  Our application is built for users that are wanting to find some awesome new books to read per _New York Times Best Sellers_ lists. 
 
 ## Deployed Link
 
@@ -25,11 +25,11 @@
 
 ### Application Wireframes
 
-![Curious Reader Wireframe](https://user-images.githubusercontent.com/95496577/181833601-0fab9089-edde-493d-a01a-3c8ebe30d9e9.png) 
+![NY Times Primes  Wireframe](https://user-images.githubusercontent.com/95496577/181833601-0fab9089-edde-493d-a01a-3c8ebe30d9e9.png) 
 
 ### Component Architecture
 
-![Curious Reader Component Wireframe](https://user-images.githubusercontent.com/95496577/181833596-9272083a-7b94-4cf4-871c-7c801fc6e87e.png) 
+![NY Times Primes  Component Wireframe](https://user-images.githubusercontent.com/95496577/181833596-9272083a-7b94-4cf4-871c-7c801fc6e87e.png) 
 
 ## Technology Stack
 
