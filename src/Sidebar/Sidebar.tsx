@@ -27,7 +27,7 @@ const Sidebar = ({ bookLists }: IBookLists) => {
  <nav>
         <NavLink to={"/"} style={{ textDecoration: "none" }}>
           <article className="header-container">
-            <h1>Curious Reader</h1>
+            <h1>NYTimes Primes</h1>
             <img src={BookIcon} className="book-icon" />
           </article>
         </NavLink>
