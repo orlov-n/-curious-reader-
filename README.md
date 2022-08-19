@@ -19,7 +19,7 @@
 
 ## Deployed Link
 
-- Check out our application [here!]() 
+- Check out our application [here!](https://ny-times-primes.herokuapp.com/) 
 
 ## Application Wireframe and Component Architecture
 
