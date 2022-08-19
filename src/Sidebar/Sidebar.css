@@ -51,7 +51,7 @@ nav {
   align-items: center;
   /* flex-wrap: wrap; */
   margin-bottom: 4.2rem;
-  /* margin-top: 3rem; */
+  margin-top: 4.63vh;
   /* margin: 0; */
   height: 140%;
   /* padding-bottom: 4.3rem; */
@@ -65,7 +65,7 @@ nav {
 h1 {
   color: white;
   text-decoration: none;
-  font-size: min(4vw, 1.8rem);
+  font-size: min(4vw, 2rem);
   color: #F3DAA0;
   text-align: center;
   margin: .643vh;
@@ -168,6 +168,13 @@ h1 {
   padding: 0;
   font-family: 'Times New Roman', Times, serif;
   margin: 0;
+    text-shadow:
+        0.07rem 0 black,
+        0 0.07rem black,
+        0.07rem 0 black,
+        0 0.07rem black;
+
+  font-weight: bold;
 }
 
 
@@ -182,8 +189,8 @@ flex-wrap: wrap;
   min-height: 2rem;
   /* max-width: 14vw; */
   padding: .1rem;
-	box-shadow: inset 1px 2px 3px rgba(0,0,0,.5), 0px 9.5px 8px rgba(0,0,0,.5);
-
+	box-shadow: inset 0px 0px 7.63px 1.5px  rgba(0,0,0,.5), 0px 9.5px 8px rgba(0,0,0,.5);
+  /* max-height: 7vh; */
   /* margin-bottom: 2.1rem; */
   /* max-height: 3.8rem; */
   /* margin: 0 1rem */
