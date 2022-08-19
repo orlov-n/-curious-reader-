@@ -2,7 +2,7 @@
 
 ## Abstract
 
-- NY Times Primes is built with TypeScript in the React.js framework.  Our application is built for users that are wanting to find some awesome new books to read per _New York Times Best Sellers_ lists. 
+- NY Times Primes is built with TypeScript in the React.js framework.  Our application is built for users that are interested in finding some awesome new books to read using  _New York Times Best Sellers_ lists. 
 
 ## Deployed Link
 
