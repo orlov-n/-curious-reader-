@@ -1,6 +1,4 @@
-/* * {
-  border: cyan 1px solid
-} */
+
 .loading-container {
   display: flex;
   flex-direction: column;
@@ -15,13 +13,8 @@
   z-index: -1;
 }
 
-
 h2 {
-  /* min-width: 17vw;
-  max-width: 25vw; */
   position: absolute;
-  
   z-index: 2;
   font-size: min(12vw, 15.2rem);
-
 }

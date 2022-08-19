@@ -77,10 +77,10 @@
 
 .description-box {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
-  margin: 2vh;
+  margin: 0.752rem;
   color:black;
   text-align: center;
   font-size: small;
@@ -89,7 +89,17 @@
 	left: 0;
 	box-sizing: border-box;
 	z-index: -1;
-	margin-top: 5px;
+	margin-top: 0;
+  font-size: .85rem;
+  /* margin-bottom: .14rem; */
+
+
+}
+
+.description {
+  font-size: .91rem;
+  margin-top: .43rem;
+  font-family:'Times New Roman', Times, serif;
 }
 
 .info-publishing {
@@ -98,24 +108,27 @@
   right: 1%; 
   width:100%; 
   text-align: center;
-  font-size: .7em;
+  font-size: .5rem;
 }
 
 .title {
 	font-weight: bolder;
-  font-size: large;
-  margin: 2vh;
+  font-size: 1.15rem;
+  margin: 1rem;
   margin-bottom: 0;
 }
 
 .author {
   font-style: italic;
-  margin-top: .5vh; 
+  margin-top: .265rem; 
+  margin-bottom: .65rem; 
+  /* text-align: center; */
+
 }
 
 .current-rank {
-  margin-bottom: .3vh;
-  margin-top: .2vh;
+  margin-bottom: 0rem;
+  margin-top: 0rem;
 }
 
 .book-flag {
@@ -174,24 +187,17 @@ margin-left: .8rem;
 
 
 .book-flag {
-  font-size: min(2.15vw, 1rem);
+  /* font-size: min(2.15vw, 1rem); */
 
   /* width: 70%; */
   /* font-size: min(2.5vw, 1.2rem); */
   
   position: relative;
-  background:#ba89b6;
+  background:#ba89b7;
   text-align: center;
   /* padding: 0.1rem; */
 }
-/* .book-flag:before, .book-flag:after {
-  content: "";
- position: absolute;
- display: block;
- bottom: -1rem;
- border: .695rem solid #986794;
- z-index: -1;
-} */
+
 .book-flag:before {
   left: -2rem;
   border-right-width: 2.3rem;
@@ -226,7 +232,7 @@ margin-left: .8rem;
   margin: .85421rem;
   padding: 0;
   font-family:'Times New Roman', Times, serif;
-  font-size: min(2.3vw, 1.3rem);
+  font-size: min(2.95vw, 1.2rem);
 
   color: rgb(255, 255, 254);
   font-weight: bold;

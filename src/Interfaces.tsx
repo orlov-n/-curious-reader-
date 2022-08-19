@@ -36,4 +36,7 @@ export interface IBook {
   publisher: string;
   rank: number;
   title: string;
+  weeks_on_list: number;
+  rank_last_week: number;
+
 }

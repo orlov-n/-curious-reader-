@@ -32,8 +32,7 @@ const App = () => {
         </div>
       ) : !bookLists.length ? (
         <div className="loading-container">
-          <img src={loadingIcon} className="loading-icon" />{" "}
-          <h2>Loading...</h2>
+          <img src={loadingIcon} className="loading-icon" /> <h2>Loading...</h2>
         </div>
       ) : (
         <>
