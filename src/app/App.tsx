@@ -1,58 +1,65 @@
-import React, { Component } from 'react';
-import './App.css';
-import { fetchBookData } from '../api-calls';
-import Sidebar from '../Sidebar/Sidebar';
-import {IState} from '../Interfaces';
-import TopBooks from '../TopBooks/TopBooks';
-import BookGenrePage from '../BookGenrePage/BookGenrePage';
-import { NavLink, Route } from 'react-router-dom';
-import ErrorMessage from '../ErrorMessage/ErrorMessage';
-import BookIcon from '../assets/book.png';
+import { useState, useEffect } from "react";
+import "./App.css";
+import { fetchBookData } from "../api-calls";
+import Sidebar from "../Sidebar/Sidebar";
+import { BookLists } from "../Interfaces";
+import TopBooks from "../TopBooks/TopBooks";
+import BookGenrePage from "../BookGenrePage/BookGenrePage";
+import { Route } from "react-router-dom";
+import ErrorMessage from "../ErrorMessage/ErrorMessage";
+import loadingIcon from "../assets/orange-loading.gif";
 
-class App extends Component<{}, IState> {
-  state: IState = {
-    bookLists: [],
-    error: false
-  };
+const App = () => {
+  const [bookLists, setBookLists] = useState<BookLists>([]);
+  const [error, setError] = useState<boolean>(false);
 
-  componentDidMount = () => {
+  useEffect(() => {
     fetchBookData()
-    .then((data) => { 
-        this.setState({ bookLists: data.results.lists })
+      .then((data) => {
+        setBookLists(data.results.lists);
       })
-    .catch((error) => {
-      console.log(error)
-      this.setState({error: true})
-    })
-  };
-  
-  render = () => {
-    return (
+      .catch((err: Error) => {
+        console.log(err);
+        setError(true);
+      });
+  }, [error]);
+
+  return (
     <>
-      {this.state.error ? <div><ErrorMessage /></div> :
+      {error ? (
+        <div>
+          <ErrorMessage />
+        </div>
+      ) : !bookLists.length ? (
+        <div className="loading-container">
+          <img src={loadingIcon} className="loading-icon" /> <h2>Loading...</h2>
+        </div>
+      ) : (
         <>
-          <nav>
-            <NavLink to={'/'} style={{ textDecoration: 'none' }}>
-              <article className='header-container'>
-                <h1>Curious Reader</h1>
-                <img src={BookIcon} className='book-icon'/>
-              </article>
-            </NavLink>
-            <Sidebar genres={this.state} />
-          </nav>
-        <Route exact path='/' render={() =>
-          <TopBooks genres={this.state}/> 
-          }/>
-      
-        <Route exact path='/:list_name' render={({match}) => {
-          return (
-          <BookGenrePage listName={match.params.list_name} genres={this.state} error={this.state.error}/>
-          )
-          }}/>
+          <Sidebar bookLists={bookLists} />
+          <Route
+            exact
+            path="/"
+            render={() => <TopBooks bookLists={bookLists} />}
+          />
+
+          <Route
+            exact
+            path="/:list_name"
+            render={({ match }) => {
+              return (
+                <BookGenrePage
+                  listName={match.params.list_name}
+                  bookLists={bookLists}
+                  error={error}
+                />
+              );
+            }}
+          />
         </>
-        }
+      )}
     </>
-    )
-  };
+  );
 };
+
 export default App;

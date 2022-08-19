@@ -1,11 +1,137 @@
+nav {
+  background-color: #422040;
+  color: #F3DAA0;
+  height: 100%;
+  width: 21%;
+  position: fixed;
+  overflow-y: auto;
+  overflow-x: hidden;
+  top: 0;
+  left: 0;
+  padding-top: 0rem;
+  min-width: 8rem;
+}
+
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0;
+  flex-wrap: wrap;
+  padding: 3.3vh .2rem;
+  padding-top: 2.8vh;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: black;
+}
+
 .genres-container {
-  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 4.2rem;
+  margin-top: 4.63vh;
+  height: 140%;
 }
 
-.genre-links {
-  color: white;
-  background-color: #7A5177;
-  padding: 5px;
-  box-shadow: 5px;
+
+h1 {
+  text-decoration: none;
+  font-size: min(4vw, 2.2rem);
+  color: #F3DAA0;
+  text-align: center;
+  margin: .643vh;
+  margin-right: .94rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+.book-icon {
+  min-height: 5vh;
+  min-width: 2vw;
+  height: 3.8vh;
+  width: auto;
+  filter: brightness(0) invert(1);
+  margin-right: .3rem;
+}
+
+.ribbon:hover {
+  background-color: #a76aa2;
+}
+
+.ribbon {
+  position: relative;
+  background: #ba89b7;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.ribbon:before,
+.ribbon:after {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: -1rem;
+  border: 1.29695rem solid #986793;
+  z-index: -1;
+}
+
+.ribbon:before {
+  left: -1.3548rem;
+  border-right-width: 1rem;
+  border-left-color: transparent;
+}
+
+.ribbon:after {
+  right: -1.358rem;
+  border-left-width: 1rem;
+  border-right-color: transparent;
+}
+
+.ribbon .ribbon-content:before,
+.ribbon .ribbon-content:after {
+  content: "";
+  position: absolute;
+  display: block;
+  border-style: solid;
+  border-color: #aea2af transparent transparent transparent;
+  bottom: -1rem;
+}
+
+.ribbon .ribbon-content:before {
+  left: 0;
+  border-width: 1rem 0 0 1rem;
+}
+
+.ribbon .ribbon-content:after {
+  right: 0;
+  border-width: 1rem 1rem 0 0;
+}
+
+.ribbon-content {
+  padding: 0;
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0;
+  text-shadow:
+    0.07rem 0 black,
+    0 0.07rem black,
+    0.07rem 0 black,
+    0 0.07rem black;
+  font-weight: bold;
+}
+
+
+.ribbon {
+  font-size: min(2.5vw, 1.5rem);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 15vw;
+  min-width: 6.3rem;
+  min-height: 2rem;
+  padding: .1rem;
+  box-shadow: inset 0px 0px 7.63px 1.5px rgba(0, 0, 0, .5), 0px 9.5px 8px rgba(0, 0, 0, .5);
+}

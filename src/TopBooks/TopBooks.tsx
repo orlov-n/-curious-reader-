@@ -1,24 +1,25 @@
-import React from 'react';
-import { Props } from '../Interfaces';
-import BookCard from '../BookCard/BookCard';
-import '../TopBooks/TopBooks.css'
-import loadingIcon from '../assets/orange-loading.gif';
+import React from "react";
+import { IBookLists, IList } from "../Interfaces";
+import BookCard from "../BookCard/BookCard";
+import "../TopBooks/TopBooks.css";
+import loadingIcon from "../assets/orange-loading.gif";
 
-
-const TopBooks = ({ genres }: Props) => {
-
-  const numberOneBooks = genres.bookLists.map((list) => {
-   return (
-    <BookCard key={list.list_id} book={list.books[0]} listName={list.display_name}/>
-   )
+const TopBooks = ({ bookLists }: IBookLists) => {
+  const numberOneBooks = bookLists.map((list) => {
+    return (
+      <BookCard
+        key={list.list_id}
+        book={list.books[0]}
+        listName={list.display_name}
+      />
+    );
   });
-  
-  return (
-    
-    <section className='books-container'>
-      {numberOneBooks}
-    </section>
-  )
+
+  return !bookLists.length ? (
+    <img src={loadingIcon} className="loading-icon" />
+  ) : (
+    <section className="top-books-container">{numberOneBooks}</section>
+  );
 };
 
 export default TopBooks;

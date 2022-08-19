@@ -1,10 +1,17 @@
 .books-container {
   display: grid;
-  grid-gap: 3rem;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  width: 70%;
-  padding: 2% 5% 2% 5%;
+  grid-gap: 4rem;
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+  padding: 4% 4% 3% 21%;
   background-color: #F3DAA0;
-  position: absolute;
-  right: 0;
+  margin-left: 7vh;
+  background-size: cover;
+  height: 100%;
+  margin-bottom: 11vh;
+}
+
+
+.loading-icon {
+  height: 90vh;
+  width: 100vw;
 }
