@@ -13,8 +13,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #F3DAA0;
   height: 100%;
-
-  /* z-index: -12; */
 }
 
 code {

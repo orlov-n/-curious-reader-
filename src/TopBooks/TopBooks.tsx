@@ -14,15 +14,12 @@ const TopBooks = ({ bookLists }: IBookLists) => {
       />
     );
   });
-  
-  return (
-    !bookLists.length ? 
-      <img src={loadingIcon} className="loading-icon" />
-    : <section className="top-books-container">{numberOneBooks}</section>
 
-    
-   
-  ) 
+  return !bookLists.length ? (
+    <img src={loadingIcon} className="loading-icon" />
+  ) : (
+    <section className="top-books-container">{numberOneBooks}</section>
+  );
 };
 
 export default TopBooks;

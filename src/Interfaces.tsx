@@ -1,17 +1,8 @@
-
-export type BookLists = Array<IList>
-
-// interface
-
-// export type bookLists: BookLists = Array<IList>
+export type BookLists = Array<IList>;
 
 export interface IBookLists {
   bookLists: IList[];
 }
-
-// export interface IError {
-//   error: boolean;
-// }
 
 export interface IList {
   list_name_encoded: string;
@@ -38,5 +29,4 @@ export interface IBook {
   title: string;
   weeks_on_list: number;
   rank_last_week: number;
-
 }

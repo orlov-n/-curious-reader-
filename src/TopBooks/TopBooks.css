@@ -2,16 +2,10 @@
   display: grid;
   grid-gap: 4rem;
   grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
-  /* width: 73%; */
   padding: 4% 4% 3% 21%;
   background-color: #F3DAA0;
-  /* position: absolute; */
-  /* right: 0; */
   margin-left: 7vh;
   background-size: cover;
   margin-bottom: 11vh;
-
-  /* height: 100vh; */
   height: 100%;
 }
-

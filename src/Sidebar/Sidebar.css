@@ -3,19 +3,13 @@ nav {
   color: #F3DAA0;
   height: 100%;
   width: 21%;
-  /* max-width: 18vw; */
   position: fixed;
-  /* z-index: 1; */
   overflow-y: auto;
   overflow-x: hidden;
   top: 0;
   left: 0;
-  /* padding: .81rem; */
   padding-top: 0rem;
   min-width: 8rem;
-  /* padding-bottom: 33.11rem; */
-  /* display: inline-block; */
-  /* margin-bottom: 1rem; */
 }
 
 
@@ -23,42 +17,24 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  /* margin: 1.9rem; */
   margin: 0;
   flex-wrap: wrap;
-  /* padding: 1.82rem; */
   padding: 3.3vh .2rem;
   padding-top: 2.8vh;
   position: sticky;
   top: 0;
   z-index: 1;
-
-  /* background: black; */
-  /* background: #422040; */
-  background-color: #422040;
   background-color: black;
-
-
 }
 
 .genres-container {
-  /* height: 78%; */
-  /* width: 100%; */
   display: flex;
-  /* padding: 1rem; */
   justify-content: space-evenly;
   flex-direction: column;
   align-items: center;
-  /* flex-wrap: wrap; */
   margin-bottom: 4.2rem;
   margin-top: 4.63vh;
-  /* margin: 0; */
   height: 140%;
-  /* padding-bottom: 4.3rem; */
-  /* display: grid;
-  /* grid-gap: 4rem; */
-  /* max-height: 85vh;  */
-  /* grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr)); */
 }
 
 
@@ -69,10 +45,7 @@ h1 {
   text-align: center;
   margin: .643vh;
   margin-right: .94rem;
-  /* margin-top: 1rem; */
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  
-  
 }
 
 .book-icon {
@@ -84,11 +57,8 @@ h1 {
   margin-right: .3rem;
 }
 
-
 .ribbon:hover {
-
   background-color: #a76aa2;
-
 }
 
 .ribbon {
@@ -149,14 +119,12 @@ h1 {
     0 0.07rem black,
     0.07rem 0 black,
     0 0.07rem black;
-
   font-weight: bold;
 }
 
 
 .ribbon {
   font-size: min(2.5vw, 1.5rem);
-
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -164,19 +132,6 @@ h1 {
   max-width: 15vw;
   min-width: 6.3rem;
   min-height: 2rem;
-  /* max-width: 14vw; */
   padding: .1rem;
   box-shadow: inset 0px 0px 7.63px 1.5px rgba(0, 0, 0, .5), 0px 9.5px 8px rgba(0, 0, 0, .5);
-  /* max-height: 7vh; */
-  /* margin-bottom: 2.1rem; */
-  /* max-height: 3.8rem; */
-  /* margin: 0 1rem */
-  /* overflow:none; */
 }
-
-/* .active {
-    background-color: rgb(201, 125, 125);
-  
-    text-shadow: 3rem;
-    color: black;
-  } */
