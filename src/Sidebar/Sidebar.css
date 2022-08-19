@@ -1,31 +1,61 @@
-.genres-container {
-  /* height: 78%; */
-  /* width: 100%; */
-  /* display: flex;
-  justify-content:space-around;
-  flex-direction: column;
-  flex-wrap: wrap; */
-  /* align-items:; */
-  /* margin-bottom: 12rem; */
-  /* margin: 0; */
-  height: 100%;
-}
 
 nav {
   background-color: #422040;
   color: #F3DAA0;
   height: 100%;
   width: 21%;
-  max-width: 18rem;
+  max-width: 18vw;
   position: fixed;
   /* z-index: 1; */
+  overflow-y: auto;
+  overflow-x: hidden;
   top: 0;
   left: 0;
-  padding: 1rem;
-  padding-top: 0;
-  min-width: 7rem;
+  /* padding: .81rem; */
+  padding-top: 0rem;
+  min-width: 8rem;
   /* display: inline-block; */
   /* margin-bottom: 1rem; */
+}
+
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  /* margin: 1.9rem; */
+  margin: 0;
+  flex-wrap: wrap;
+  /* padding: 1.82rem; */
+  padding: 3.3vh .2rem;
+  padding-top: 2.8vh;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  /* background: black; */
+  /* background: #422040; */
+  background-color: #422040;
+  background-color: black;
+  
+  
+}
+.genres-container {
+  /* height: 78%; */
+  /* width: 100%; */
+  display: flex;
+  /* padding: 1rem; */
+  justify-content:space-evenly;
+  flex-direction: column;
+  align-items: center;
+  /* flex-wrap: wrap; */
+  /* margin-bottom: 12rem; */
+  /* margin: 0; */
+  height: 140%;
+  /* padding-bottom: 4.3rem; */
+  /* display: grid;
+  /* grid-gap: 4rem; */
+  /* max-height: 85vh;  */
+  /* grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr)); */
 }
 
 
@@ -35,31 +65,24 @@ h1 {
   font-size: min(4vw, 1.8rem);
   color: #F3DAA0;
 
-  margin: 0;
+  margin: .643vh;
   margin-right: .94rem;
+  /* margin-top: 1rem; */
 }
 
 .book-icon {
-  height: 2.3rem;
+  height: 3.8vh;
   width: auto;
   filter: brightness(0) invert(1);
-}
-
-.header-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  /* flex-wrap: wrap; */
-  /* padding: 1.82rem; */
-  padding: 1rem .2rem;
+  margin-right: .3rem;
 }
 
 
 .ribbon:hover {
- 
+
   background-color: #a76aa2;
 
-} 
+}
 
 .genre-links {
   color: white;
@@ -69,47 +92,54 @@ h1 {
   margin: 0;
   padding: 0;
   font-size: min(2.5vw, 1.2rem);
-  border: solid black 1px;
- 
+  /* border: solid black 21px; */
+
 
 }
 
 
 
 .ribbon {
-  font-size: min(2.15vw, 1.2rem);
-
+/* height: 4rem; */
   /* width: 70%; */
   /* font-size: min(2.5vw, 1.2rem); */
-  
+
   position: relative;
   background: #ba89b6;
+  /* background: #ba89b6; */
   color: rgb(253, 243, 213);
   color: rgb(255, 234, 187);
+  color: rgb(255, 255, 255);
 
   text-align: center;
-  
+
   /* padding: 0.1rem; */
 }
-.ribbon:before, .ribbon:after {
+
+.ribbon:before,
+.ribbon:after {
   content: "";
- position: absolute;
- display: block;
- bottom: -1rem;
- border: .695rem solid #986794;
- z-index: -1;
+  position: absolute;
+  display: block;
+  bottom: -1rem;
+  border: 1.29695rem solid #986794;
+  z-index: -1;
 }
+
 .ribbon:before {
-  left: -2rem;
-  border-right-width: 2.3rem;
+  left: -1.3548rem;
+  border-right-width: 1rem;
   border-left-color: transparent;
 }
+
 .ribbon:after {
-  right: -2rem;
-  border-left-width: 2.193rem;
+  right: -1.358rem;
+  border-left-width: 1rem;
   border-right-color: transparent;
 }
-.ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
+
+.ribbon .ribbon-content:before,
+.ribbon .ribbon-content:after {
   content: "";
   position: absolute;
   display: block;
@@ -117,10 +147,12 @@ h1 {
   border-color: #574555 transparent transparent transparent;
   bottom: -1rem;
 }
+
 .ribbon .ribbon-content:before {
   left: 0;
   border-width: 1rem 0 0 1rem;
 }
+
 .ribbon .ribbon-content:after {
 
   right: 0;
@@ -129,19 +161,30 @@ h1 {
 
 .ribbon-content {
   /* margin: .642rem; */
-  margin: .85421rem;
+  /* margin: .85421rem; */
   padding: 0;
-  font-family:'Times New Roman', Times, serif;
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0;
 }
 
 
 .ribbon {
-  min-width: 8rem;
-  max-width: 14rem;
+  font-size: min(3.15vw, 1.4rem);
+display: flex;
+justify-content: center;
+flex-direction: column;
+flex-wrap: wrap;
+  width: 15vw;
+  min-width: 6rem;
+  min-height: 2rem;
+  /* max-width: 14vw; */
+  padding: 0;
+  /* margin-bottom: 2.1rem; */
   /* max-height: 3.8rem; */
+  /* margin: 0 1rem */
 }
-  
-  /* .active {
+
+/* .active {
     background-color: rgb(201, 125, 125);
   
     text-shadow: 3rem;

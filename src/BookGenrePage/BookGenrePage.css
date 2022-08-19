@@ -1,14 +1,16 @@
 .books-container {
   display: grid;
-  grid-gap: 5rem;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  width: 70%;
-  padding: 2% 5% 8% 5%;
+  grid-gap: 4rem;
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+  /* width: 73%; */
+  padding: 4% 4% 3% 21%;
   background-color: #F3DAA0;
-  position: absolute;
-  right: 0;
-  height: auto;
-
+  /* position: absolute; */
+  /* right: 0; */
+  margin-left: 6vh;
+  background-size: cover;
+  /* height: 100vh; */
+  height: 100%;
 }
 
 
