@@ -1,17 +1,4 @@
 
-## Table of Contents
-
-- [Table of Contents](#table-of-contents)
-- [Abstract](#abstract)
-- [Deployed Link](#deployed-link])
-- [Technologies Used](#technologies-used)
-- [Application & Component Wireframes](#application-and-component-wireframes)
-- [Context and Features](#context-and-features)
-- [User Stories](#user-stories)
-- [Future Features](#future-features)
-- [Application Set-Up](#application-set-up)
-- [Contributor LinkedIns and GitHubs](#contributor-linkedin-and-github)
-- [Project Specs](#project-specs)
 
 ## Abstract
 
