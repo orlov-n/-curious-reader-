@@ -4,7 +4,7 @@ nav {
   color: #F3DAA0;
   height: 100%;
   width: 21%;
-  max-width: 18vw;
+  /* max-width: 18vw; */
   position: fixed;
   /* z-index: 1; */
   overflow-y: auto;
@@ -14,6 +14,7 @@ nav {
   /* padding: .81rem; */
   padding-top: 0rem;
   min-width: 8rem;
+  /* padding-bottom: 33.11rem; */
   /* display: inline-block; */
   /* margin-bottom: 1rem; */
 }
@@ -32,6 +33,7 @@ nav {
   position: sticky;
   top: 0;
   z-index: 1;
+  
   /* background: black; */
   /* background: #422040; */
   background-color: #422040;
@@ -48,7 +50,8 @@ nav {
   flex-direction: column;
   align-items: center;
   /* flex-wrap: wrap; */
-  /* margin-bottom: 12rem; */
+  margin-bottom: 4.2rem;
+  /* margin-top: 3rem; */
   /* margin: 0; */
   height: 140%;
   /* padding-bottom: 4.3rem; */
@@ -64,7 +67,7 @@ h1 {
   text-decoration: none;
   font-size: min(4vw, 1.8rem);
   color: #F3DAA0;
-
+  text-align: center;
   margin: .643vh;
   margin-right: .94rem;
   /* margin-top: 1rem; */
@@ -144,7 +147,7 @@ h1 {
   position: absolute;
   display: block;
   border-style: solid;
-  border-color: #574555 transparent transparent transparent;
+  border-color: #aea2af transparent transparent transparent;
   bottom: -1rem;
 }
 
@@ -169,19 +172,22 @@ h1 {
 
 
 .ribbon {
-  font-size: min(3.15vw, 1.4rem);
+  font-size: min(2.35vw, 1.4rem);
 display: flex;
 justify-content: center;
 flex-direction: column;
 flex-wrap: wrap;
-  width: 15vw;
-  min-width: 6rem;
+  max-width: 15vw;
+  min-width: 6.3rem;
   min-height: 2rem;
   /* max-width: 14vw; */
-  padding: 0;
+  padding: .1rem;
+	box-shadow: inset 1px 2px 3px rgba(0,0,0,.5), 0px 9.5px 8px rgba(0,0,0,.5);
+
   /* margin-bottom: 2.1rem; */
   /* max-height: 3.8rem; */
   /* margin: 0 1rem */
+  /* overflow:none; */
 }
 
 /* .active {
