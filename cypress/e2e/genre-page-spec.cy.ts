@@ -7,7 +7,7 @@ describe('Top Book Page', () => {
 
   it.skip('Should have a page title', () => {
     cy.visit('http://localhost:3000/Hardcover%20Fiction')
-    cy.get('h1').should('contain.text', 'Curious Reader')
+    cy.get('h1').should('contain.text', 'NY Times Primes')
   })
 
   it.skip('Should diplay books from the correct genre' , () => {

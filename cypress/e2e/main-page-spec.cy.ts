@@ -7,7 +7,7 @@ describe('Top Book Page', () => {
   })
 
   it('Should have a page title', () => {
-    cy.get('h1').should('contain.text', 'Curious Reader')
+    cy.get('h1').should('contain.text', 'NY Times Primes')
   })
 
   it('Should have a home page displaying books.', () => {
